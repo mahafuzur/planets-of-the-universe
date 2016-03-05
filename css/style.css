@@ -1,0 +1,15 @@
+html,
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color: #333;
+}
+
+
+.current{
+	background: #0C8C7B;
+	color: #fff;
+}
