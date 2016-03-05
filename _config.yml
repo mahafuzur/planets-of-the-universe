@@ -1,0 +1,3 @@
+markdown: karamdown
+baseurl: /planets-of-the-universe
+exclude: ['README.md']
