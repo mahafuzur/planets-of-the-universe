@@ -7,13 +7,17 @@
 <body>
 
 	<header>
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="news.html">News</a>
-		</nav>
+		{% include nav.html %}
 	</header>
 
+
 	{{ content }}
+
+	<hr>
+	<footer>
+		{% include nav.html %}
+		<p>copyrignt &copy; 2015</p>
+	</footer>
 
 </body>
 </html>
