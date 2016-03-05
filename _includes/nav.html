@@ -1,5 +1,5 @@
 <nav>
-	<a href="{{ site.baseurl }}/" class="current">Home</a>
+	<a href="{{ site.baseurl }}/" class="{% if page.url == '/' %}current{% endif %}">Home</a>
 	<a href="{{ site.baseurl }}/planets/">Planets</a>
-	<a href="{{ site.baseurl }}/news.html">News</a>
+	<a href="{{ site.baseurl }}/news.html" class="{% if page.url == '/news.html' %}current{% endif %}">News</a>
 </nav>
