@@ -1,13 +1,11 @@
 ---
-layout: default
+layout: news
 ---
 
-
-<h2>News pages</h2>
-
+<h2>Planets news</h2>
 
 <article>
-	{% for post in site.categories.news %}
+	{% for post in site.categories.news limit:2 %}
 	<div>
 		<a href=""><h3>{{ post.title }}</h3></a>
 		<p>{{ post.excerpt }}</p>
