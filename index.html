@@ -2,5 +2,28 @@
 layout: default
 ---
 <h1>Planets of the Universe</h1>
-<p>A small site with different information of planets</p>
+<p>A planet is an astronomical object orbiting a star or stellar remant that.</p>
+
+<h2>Types of Planets</h2>
+
+<ol>
+	{% for planet in site.data.planet-types %}
+	<li>
+		<a href="#"><h3>{{ planet.title }}</h3></a>
+		{{planet.content | markdownify}}
+	</li>
+	{% endfor %}
+</ol>
+
+
+<h2>Recently Discovered planets</h2>
+
+<article>
+	{% for post in site.categories.planets limit:2 %}
+	<div>
+		<a href="{{site.baseurl}}{{post.url}}"><h3>{{ post.title }}</h3></a>
+		<p>{{ post.excerpt }}</p>
+	</div>
+	{% endfor %}
+</article>
 
